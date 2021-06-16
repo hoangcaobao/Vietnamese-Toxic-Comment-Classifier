@@ -19,8 +19,9 @@ mv VnCoreNLP-1.1.1.jar vncorenlp/
 mv vi-vocab vncorenlp/models/wordsegmenter/
 mv wordsegmenter.rdr vncorenlp/models/wordsegmenter/
 ```
+3. Add more data in 2 json files
 
-3. Run training file:
+4. Run training file:
 ```
 python3 training.py
 ```
