@@ -7,7 +7,7 @@ I use VNCoreNLP for preprocess the raw Vietnamese sentences data and PhoBERT to 
 
 ### 1. Git clone my repository:
 ```
-git clone https://github.com/hoangcaobao/VietnameseTextToxicClassify.git
+git clone https://github.com/hoangcaobao/Vietnamese_Text_Toxic_Classify.git
 ```
 
 ### 2. Change directory to my folder and install VNCoreNLP:
