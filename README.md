@@ -28,3 +28,5 @@ mv wordsegmenter.rdr vncorenlp/models/wordsegmenter/
 ```
 python3 training.py
 ```
+---
+### HOANG CAO BAO
