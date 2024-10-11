@@ -23,7 +23,7 @@ def get_data(all_path):
       datastore=json.load(f)
     for item in datastore:
       sentences.append(item["sentences"])
-      labels.append(item["sacarism"])
+      labels.append(item["toxic"])
   return sentences, labels
 
 rdrsegmenter=VnCoreNLP("vncorenlp/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
@@ -66,7 +66,7 @@ def Data_Loader(X_train,X_val,y_train,y_val):
   val_dataloader=DataLoader(val_data, sampler=val_sampler,batch_size=2)
   return train_dataloader, val_dataloader
 
-sentences,labels=get_data(['sacarism_dataset.json','normal_dataset.json'])
+sentences,labels=get_data(['toxic_dataset.json','normal_dataset.json'])
 sentences_segment(sentences)
 padded,labels=shuffle_and_tokenize(sentences,labels,check_maxlen(sentences))
 X_train,X_val,X_test, y_train,y_val, y_test=split_data(padded, labels)
